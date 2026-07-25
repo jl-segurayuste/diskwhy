@@ -1,0 +1,30 @@
+[project]
+name = "diskwhy"
+version = "0.1.0"
+description = "Explica por qué una carpeta pesa tanto y qué es seguro borrar: node_modules/venvs regenerables, entornos huérfanos, lockfiles duplicados, espacio reclamable de Docker."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.6"]
+
+[project.scripts]
+diskwhy = "diskwhy.cli:main"
+
+[project.entry-points."diskwhy.checks"]
+reclaimable_dirs = "diskwhy.checks.reclaimable_dirs:ReclaimableDirsCheck"
+orphaned_envs = "diskwhy.checks.orphaned_envs:OrphanedEnvsCheck"
+duplicate_lockfiles = "diskwhy.checks.duplicate_lockfiles:DuplicateLockfilesCheck"
+docker_reclaimable = "diskwhy.checks.docker_reclaimable:DockerReclaimableCheck"
+
+[tool.setuptools.packages.find]
+include = ["diskwhy*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
