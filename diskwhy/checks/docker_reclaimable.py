@@ -51,7 +51,12 @@ class DockerReclaimableCheck:
             except json.JSONDecodeError:
                 continue
             reclaimable = row.get("Reclaimable", "")
-            if not reclaimable or reclaimable.strip().startswith("0"):
+            # OJO: no usar `.startswith("0")` -- un valor real como "0.5GB (10%)"
+            # también empieza por "0" y se descartaría como si fuera cero. Docker
+            # solo representa el cero exacto como "0B" (no hay unidad más pequeña
+            # que el byte, así que nunca hay un "0.xxx B"), con o sin porcentaje
+            # detrás -- ese es el único prefijo que de verdad significa "nada".
+            if not reclaimable or reclaimable.strip().startswith("0B"):
                 continue
             findings.append(
                 Finding(
