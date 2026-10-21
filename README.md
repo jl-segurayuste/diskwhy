@@ -6,18 +6,18 @@ en vez de solo mostrarte números y dejarte adivinar.
 ```
 $ diskwhy scan ~/projects
 
-diskwhy — /home/jose/projects
+diskwhy — /home/usuario/projects
 
 ── reclaimable_dirs ─────────────────────
   4 carpeta(s) regenerables, 3.2 GB recuperables en total.
-  [INFO  ] node_modules (1.8 GB) (/home/jose/projects/app/node_modules)
+  [INFO  ] node_modules (1.8 GB) (/home/usuario/projects/app/node_modules)
            Regenerable -- seguro borrar y reinstalar/reconstruir cuando haga falta.
-  [INFO  ] .venv (900 MB) (/home/jose/projects/api/.venv)
+  [INFO  ] .venv (900 MB) (/home/usuario/projects/api/.venv)
            Regenerable -- seguro borrar y reinstalar/reconstruir cuando haga falta.
 
 ── orphaned_envs ────────────────────────
   3 entorno(s) virtual(es) revisado(s), 1 huérfano(s).
-  [HIGH  ] Entorno huérfano: /home/jose/projects/old-script/.venv (400 MB)
+  [HIGH  ] Entorno huérfano: /home/usuario/projects/old-script/.venv (400 MB)
            No hay pyproject.toml/requirements.txt/setup.py junto a este venv --
            el proyecto probablemente ya no existe.
 
