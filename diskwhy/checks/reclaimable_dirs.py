@@ -13,7 +13,7 @@ def _has_tracked_files(path: Path) -> bool:
     """True si git tiene ficheros versionados dentro: entonces es código, no algo regenerable."""
     try:
         out = subprocess.run(
-            ["git", "ls-files", "--", "."], cwd=path, capture_output=True, text=True, timeout=30, check=False
+            ["git", "-c", "core.quotePath=false", "ls-files", "--", "."], cwd=path, capture_output=True, text=True, timeout=30, check=False
         )
     except (OSError, subprocess.TimeoutExpired):
         return False
