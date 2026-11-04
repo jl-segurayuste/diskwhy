@@ -42,7 +42,7 @@ class OrphanedEnvsCheck:
                 findings.append(
                     Finding(
                         severity="high",
-                        title=f"Entorno huérfano: {venv_dir} ({human_size(size)})",
+                        title=f"Entorno huérfano ({human_size(size)})",
                         detail="No hay pyproject.toml/requirements.txt/setup.py junto a este venv -- el proyecto probablemente ya no existe.",
                         path=str(venv_dir),
                         size_bytes=size,

@@ -1,0 +1,178 @@
+<svg class="rich-terminal" viewBox="0 0 1287 782.0" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generated with Rich https://www.textualize.io -->
+    <style>
+    text { font-variant-ligatures: none; }
+
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Regular"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff") format("woff");
+        font-style: normal;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Bold"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff") format("woff");
+        font-style: bold;
+        font-weight: 700;
+    }
+
+    .terminal-1726793642-matrix {
+        font-family: Fira Code, monospace;
+        font-size: 20px;
+        line-height: 24.4px;
+        font-variant-east-asian: full-width;
+    }
+
+    .terminal-1726793642-title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .terminal-1726793642-r1 { fill: #98a84b;font-weight: bold }
+.terminal-1726793642-r2 { fill: #c5c8c6 }
+.terminal-1726793642-r3 { fill: #608ab1;font-weight: bold }
+.terminal-1726793642-r4 { fill: #cc555a;font-weight: bold }
+    </style>
+
+    <defs>
+    <clipPath id="terminal-1726793642-clip-terminal">
+      <rect x="0" y="0" width="1267.8" height="731.0" />
+    </clipPath>
+    <clipPath id="terminal-1726793642-line-0">
+    <rect x="0" y="1.5" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-1">
+    <rect x="0" y="25.9" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-2">
+    <rect x="0" y="50.3" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-3">
+    <rect x="0" y="74.7" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-4">
+    <rect x="0" y="99.1" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-5">
+    <rect x="0" y="123.5" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-6">
+    <rect x="0" y="147.9" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-7">
+    <rect x="0" y="172.3" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-8">
+    <rect x="0" y="196.7" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-9">
+    <rect x="0" y="221.1" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-10">
+    <rect x="0" y="245.5" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-11">
+    <rect x="0" y="269.9" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-12">
+    <rect x="0" y="294.3" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-13">
+    <rect x="0" y="318.7" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-14">
+    <rect x="0" y="343.1" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-15">
+    <rect x="0" y="367.5" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-16">
+    <rect x="0" y="391.9" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-17">
+    <rect x="0" y="416.3" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-18">
+    <rect x="0" y="440.7" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-19">
+    <rect x="0" y="465.1" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-20">
+    <rect x="0" y="489.5" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-21">
+    <rect x="0" y="513.9" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-22">
+    <rect x="0" y="538.3" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-23">
+    <rect x="0" y="562.7" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-24">
+    <rect x="0" y="587.1" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-25">
+    <rect x="0" y="611.5" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-26">
+    <rect x="0" y="635.9" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-27">
+    <rect x="0" y="660.3" width="1268.8" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-1726793642-line-28">
+    <rect x="0" y="684.7" width="1268.8" height="24.65"/>
+            </clipPath>
+    </defs>
+
+    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="1285" height="780" rx="8"/><text class="terminal-1726793642-title" fill="#c5c8c6" text-anchor="middle" x="642" y="27">diskwhy</text>
+            <g transform="translate(26,22)">
+            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>
+            <circle cx="22" cy="0" r="7" fill="#febc2e"/>
+            <circle cx="44" cy="0" r="7" fill="#28c840"/>
+            </g>
+        
+    <g transform="translate(9, 41)" clip-path="url(#terminal-1726793642-clip-terminal)">
+    
+    <g class="terminal-1726793642-matrix">
+    <text class="terminal-1726793642-r1" x="0" y="20" textLength="24.4" clip-path="url(#terminal-1726793642-line-0)">$&#160;</text><text class="terminal-1726793642-r1" x="24.4" y="20" textLength="488" clip-path="url(#terminal-1726793642-line-0)">diskwhy&#160;scan&#160;.&#160;--skip&#160;docker_reclaimable</text><text class="terminal-1726793642-r2" x="1268.8" y="20" textLength="12.2" clip-path="url(#terminal-1726793642-line-0)">
+</text><text class="terminal-1726793642-r2" x="0" y="44.4" textLength="256.2" clip-path="url(#terminal-1726793642-line-1)">diskwhy&#160;—&#160;~/proyectos</text><text class="terminal-1726793642-r2" x="1268.8" y="44.4" textLength="12.2" clip-path="url(#terminal-1726793642-line-1)">
+</text><text class="terminal-1726793642-r2" x="1268.8" y="68.8" textLength="12.2" clip-path="url(#terminal-1726793642-line-2)">
+</text><text class="terminal-1726793642-r2" x="0" y="93.2" textLength="536.8" clip-path="url(#terminal-1726793642-line-3)">──&#160;duplicate_lockfiles&#160;─────────────────────</text><text class="terminal-1726793642-r2" x="1268.8" y="93.2" textLength="12.2" clip-path="url(#terminal-1726793642-line-3)">
+</text><text class="terminal-1726793642-r2" x="0" y="117.6" textLength="634.4" clip-path="url(#terminal-1726793642-line-4)">&#160;&#160;2&#160;lockfile(s)&#160;analizados,&#160;1&#160;grupo(s)&#160;duplicado(s).</text><text class="terminal-1726793642-r2" x="1268.8" y="117.6" textLength="12.2" clip-path="url(#terminal-1726793642-line-4)">
+</text><text class="terminal-1726793642-r3" x="24.4" y="142" textLength="97.6" clip-path="url(#terminal-1726793642-line-5)">[INFO&#160;&#160;]</text><text class="terminal-1726793642-r2" x="122" y="142" textLength="512.4" clip-path="url(#terminal-1726793642-line-5)">&#160;2&#160;lockfiles&#160;idénticos&#160;(package-lock.json)</text><text class="terminal-1726793642-r2" x="1268.8" y="142" textLength="12.2" clip-path="url(#terminal-1726793642-line-5)">
+</text><text class="terminal-1726793642-r2" x="0" y="166.4" textLength="951.6" clip-path="url(#terminal-1726793642-line-6)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Mismas&#160;dependencias&#160;exactas&#160;en:&#160;~/proyectos/web/package-lock.json,&#160;</text><text class="terminal-1726793642-r2" x="1268.8" y="166.4" textLength="12.2" clip-path="url(#terminal-1726793642-line-6)">
+</text><text class="terminal-1726793642-r2" x="0" y="190.8" textLength="1232.2" clip-path="url(#terminal-1726793642-line-7)">~/proyectos/panel/package-lock.json.&#160;Considera&#160;un&#160;gestor&#160;de&#160;paquetes&#160;con&#160;cache&#160;global&#160;(pnpm)&#160;para&#160;no&#160;</text><text class="terminal-1726793642-r2" x="1268.8" y="190.8" textLength="12.2" clip-path="url(#terminal-1726793642-line-7)">
+</text><text class="terminal-1726793642-r2" x="0" y="215.2" textLength="427" clip-path="url(#terminal-1726793642-line-8)">duplicar&#160;node_modules&#160;por&#160;completo.</text><text class="terminal-1726793642-r2" x="1268.8" y="215.2" textLength="12.2" clip-path="url(#terminal-1726793642-line-8)">
+</text><text class="terminal-1726793642-r2" x="1268.8" y="239.6" textLength="12.2" clip-path="url(#terminal-1726793642-line-9)">
+</text><text class="terminal-1726793642-r2" x="0" y="264" textLength="536.8" clip-path="url(#terminal-1726793642-line-10)">──&#160;orphaned_envs&#160;───────────────────────────</text><text class="terminal-1726793642-r2" x="1268.8" y="264" textLength="12.2" clip-path="url(#terminal-1726793642-line-10)">
+</text><text class="terminal-1726793642-r2" x="0" y="288.4" textLength="658.8" clip-path="url(#terminal-1726793642-line-11)">&#160;&#160;2&#160;entorno(s)&#160;virtual(es)&#160;revisado(s),&#160;1&#160;huérfano(s).</text><text class="terminal-1726793642-r2" x="1268.8" y="288.4" textLength="12.2" clip-path="url(#terminal-1726793642-line-11)">
+</text><text class="terminal-1726793642-r4" x="24.4" y="312.8" textLength="97.6" clip-path="url(#terminal-1726793642-line-12)">[HIGH&#160;&#160;]</text><text class="terminal-1726793642-r2" x="122" y="312.8" textLength="756.4" clip-path="url(#terminal-1726793642-line-12)">&#160;Entorno&#160;huérfano&#160;(4.8&#160;MB)&#160;(~/proyectos/prototipo-viejo/.venv)</text><text class="terminal-1726793642-r2" x="1268.8" y="312.8" textLength="12.2" clip-path="url(#terminal-1726793642-line-12)">
+</text><text class="terminal-1726793642-r2" x="0" y="337.2" textLength="1122.4" clip-path="url(#terminal-1726793642-line-13)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;No&#160;hay&#160;pyproject.toml/requirements.txt/setup.py&#160;junto&#160;a&#160;este&#160;venv&#160;--&#160;el&#160;proyecto&#160;</text><text class="terminal-1726793642-r2" x="1268.8" y="337.2" textLength="12.2" clip-path="url(#terminal-1726793642-line-13)">
+</text><text class="terminal-1726793642-r2" x="0" y="361.6" textLength="329.4" clip-path="url(#terminal-1726793642-line-14)">probablemente&#160;ya&#160;no&#160;existe.</text><text class="terminal-1726793642-r2" x="1268.8" y="361.6" textLength="12.2" clip-path="url(#terminal-1726793642-line-14)">
+</text><text class="terminal-1726793642-r2" x="1268.8" y="386" textLength="12.2" clip-path="url(#terminal-1726793642-line-15)">
+</text><text class="terminal-1726793642-r2" x="0" y="410.4" textLength="536.8" clip-path="url(#terminal-1726793642-line-16)">──&#160;reclaimable_dirs&#160;────────────────────────</text><text class="terminal-1726793642-r2" x="1268.8" y="410.4" textLength="12.2" clip-path="url(#terminal-1726793642-line-16)">
+</text><text class="terminal-1726793642-r2" x="0" y="434.8" textLength="719.8" clip-path="url(#terminal-1726793642-line-17)">&#160;&#160;5&#160;carpeta(s)&#160;regenerables,&#160;12.4&#160;MB&#160;recuperables&#160;en&#160;total.</text><text class="terminal-1726793642-r2" x="1268.8" y="434.8" textLength="12.2" clip-path="url(#terminal-1726793642-line-17)">
+</text><text class="terminal-1726793642-r3" x="24.4" y="459.2" textLength="97.6" clip-path="url(#terminal-1726793642-line-18)">[INFO&#160;&#160;]</text><text class="terminal-1726793642-r2" x="122" y="459.2" textLength="622.2" clip-path="url(#terminal-1726793642-line-18)">&#160;.venv&#160;(4.8&#160;MB)&#160;(~/proyectos/prototipo-viejo/.venv)</text><text class="terminal-1726793642-r2" x="1268.8" y="459.2" textLength="12.2" clip-path="url(#terminal-1726793642-line-18)">
+</text><text class="terminal-1726793642-r2" x="0" y="483.6" textLength="1012.6" clip-path="url(#terminal-1726793642-line-19)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Regenerable&#160;--&#160;seguro&#160;borrar&#160;y&#160;reinstalar/reconstruir&#160;cuando&#160;haga&#160;falta.</text><text class="terminal-1726793642-r2" x="1268.8" y="483.6" textLength="12.2" clip-path="url(#terminal-1726793642-line-19)">
+</text><text class="terminal-1726793642-r3" x="24.4" y="508" textLength="97.6" clip-path="url(#terminal-1726793642-line-20)">[INFO&#160;&#160;]</text><text class="terminal-1726793642-r2" x="122" y="508" textLength="646.6" clip-path="url(#terminal-1726793642-line-20)">&#160;node_modules&#160;(2.9&#160;MB)&#160;(~/proyectos/web/node_modules)</text><text class="terminal-1726793642-r2" x="1268.8" y="508" textLength="12.2" clip-path="url(#terminal-1726793642-line-20)">
+</text><text class="terminal-1726793642-r2" x="0" y="532.4" textLength="1012.6" clip-path="url(#terminal-1726793642-line-21)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Regenerable&#160;--&#160;seguro&#160;borrar&#160;y&#160;reinstalar/reconstruir&#160;cuando&#160;haga&#160;falta.</text><text class="terminal-1726793642-r2" x="1268.8" y="532.4" textLength="12.2" clip-path="url(#terminal-1726793642-line-21)">
+</text><text class="terminal-1726793642-r3" x="24.4" y="556.8" textLength="97.6" clip-path="url(#terminal-1726793642-line-22)">[INFO&#160;&#160;]</text><text class="terminal-1726793642-r2" x="122" y="556.8" textLength="671" clip-path="url(#terminal-1726793642-line-22)">&#160;node_modules&#160;(2.9&#160;MB)&#160;(~/proyectos/panel/node_modules)</text><text class="terminal-1726793642-r2" x="1268.8" y="556.8" textLength="12.2" clip-path="url(#terminal-1726793642-line-22)">
+</text><text class="terminal-1726793642-r2" x="0" y="581.2" textLength="1012.6" clip-path="url(#terminal-1726793642-line-23)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Regenerable&#160;--&#160;seguro&#160;borrar&#160;y&#160;reinstalar/reconstruir&#160;cuando&#160;haga&#160;falta.</text><text class="terminal-1726793642-r2" x="1268.8" y="581.2" textLength="12.2" clip-path="url(#terminal-1726793642-line-23)">
+</text><text class="terminal-1726793642-r3" x="24.4" y="605.6" textLength="97.6" clip-path="url(#terminal-1726793642-line-24)">[INFO&#160;&#160;]</text><text class="terminal-1726793642-r2" x="122" y="605.6" textLength="475.8" clip-path="url(#terminal-1726793642-line-24)">&#160;.venv&#160;(1.9&#160;MB)&#160;(~/proyectos/api/.venv)</text><text class="terminal-1726793642-r2" x="1268.8" y="605.6" textLength="12.2" clip-path="url(#terminal-1726793642-line-24)">
+</text><text class="terminal-1726793642-r2" x="0" y="630" textLength="1012.6" clip-path="url(#terminal-1726793642-line-25)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Regenerable&#160;--&#160;seguro&#160;borrar&#160;y&#160;reinstalar/reconstruir&#160;cuando&#160;haga&#160;falta.</text><text class="terminal-1726793642-r2" x="1268.8" y="630" textLength="12.2" clip-path="url(#terminal-1726793642-line-25)">
+</text><text class="terminal-1726793642-r3" x="24.4" y="654.4" textLength="97.6" clip-path="url(#terminal-1726793642-line-26)">[INFO&#160;&#160;]</text><text class="terminal-1726793642-r2" x="122" y="654.4" textLength="683.2" clip-path="url(#terminal-1726793642-line-26)">&#160;__pycache__&#160;(40.0&#160;KB)&#160;(~/proyectos/api/app/__pycache__)</text><text class="terminal-1726793642-r2" x="1268.8" y="654.4" textLength="12.2" clip-path="url(#terminal-1726793642-line-26)">
+</text><text class="terminal-1726793642-r2" x="0" y="678.8" textLength="1012.6" clip-path="url(#terminal-1726793642-line-27)">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Regenerable&#160;--&#160;seguro&#160;borrar&#160;y&#160;reinstalar/reconstruir&#160;cuando&#160;haga&#160;falta.</text><text class="terminal-1726793642-r2" x="1268.8" y="678.8" textLength="12.2" clip-path="url(#terminal-1726793642-line-27)">
+</text><text class="terminal-1726793642-r2" x="1268.8" y="703.2" textLength="12.2" clip-path="url(#terminal-1726793642-line-28)">
+</text><text class="terminal-1726793642-r2" x="0" y="727.6" textLength="256.2" clip-path="url(#terminal-1726793642-line-29)">Total:&#160;7&#160;hallazgo(s).</text><text class="terminal-1726793642-r2" x="1268.8" y="727.6" textLength="12.2" clip-path="url(#terminal-1726793642-line-29)">
+</text>
+    </g>
+    </g>
+</svg>

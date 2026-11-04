@@ -1,6 +1,6 @@
 [project]
 name = "diskwhy"
-version = "0.1.4"
+version = "0.1.5"
 description = "Explica por qué una carpeta pesa tanto y qué es seguro borrar: node_modules/venvs regenerables, entornos huérfanos, lockfiles duplicados, espacio reclamable de Docker."
 readme = "README.md"
 license = { text = "MIT" }

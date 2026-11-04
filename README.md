@@ -17,12 +17,18 @@ diskwhy — /home/usuario/projects
 
 ── orphaned_envs ────────────────────────
   3 entorno(s) virtual(es) revisado(s), 1 huérfano(s).
-  [HIGH  ] Entorno huérfano: /home/usuario/projects/old-script/.venv (400 MB)
+  [HIGH  ] Entorno huérfano (400 MB) (/home/usuario/projects/old-script/.venv)
            No hay pyproject.toml/requirements.txt/setup.py junto a este venv --
            el proyecto probablemente ya no existe.
 
 Total: 6 hallazgo(s).
 ```
+
+## Así se ve
+
+![Salida de diskwhy sobre un proyecto de ejemplo](docs/img/demo.svg)
+
+<sub>Ejecución real sobre una carpeta de proyectos con `node_modules`, entornos virtuales (uno huérfano) y lockfiles duplicados (todos los datos son ficticios).</sub>
 
 ## Por qué existe
 

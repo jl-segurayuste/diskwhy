@@ -39,3 +39,10 @@ def test_venv_de_proyecto_vivo_no_es_huerfano(tree, marker):
     make_dir_with_size(tree / "p" / ".venv", 10)
     write(tree / "p", marker, "x")
     assert OrphanedEnvsCheck().run(tree).findings == []
+
+
+def test_titulo_sin_ruta_repetida(tree):
+    make_dir_with_size(tree / "viejo" / ".venv", 4096)
+    [finding] = OrphanedEnvsCheck().run(tree).findings
+    assert finding.title == "Entorno huérfano (4.0 KB)"
+    assert finding.path.endswith(".venv")
