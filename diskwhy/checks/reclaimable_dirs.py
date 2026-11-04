@@ -1,18 +1,32 @@
 from __future__ import annotations
 
 import os
+import subprocess
 from pathlib import Path
 
 from diskwhy.fs import dir_size, human_size
-from diskwhy.patterns import RECLAIMABLE_DIR_NAMES
+from diskwhy.patterns import AMBIGUOUS_DIR_NAMES, RECLAIMABLE_DIR_NAMES
 from diskwhy.plugin import CheckResult, Finding
+
+
+def _has_tracked_files(path: Path) -> bool:
+    """True si git tiene ficheros versionados dentro: entonces es código, no algo regenerable."""
+    try:
+        out = subprocess.run(
+            ["git", "ls-files", "--", "."], cwd=path, capture_output=True, text=True, timeout=30, check=False
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return False
+    return out.returncode == 0 and bool(out.stdout.strip())
 
 
 def _find_junk_dirs(root: Path):
     for dirpath, dirnames, _filenames in os.walk(root, followlinks=False):
         keep = []
         for name in dirnames:
-            if name in RECLAIMABLE_DIR_NAMES:
+            if name in AMBIGUOUS_DIR_NAMES and _has_tracked_files(Path(dirpath) / name):
+                keep.append(name)   # carpeta de código: se recorre como cualquier otra
+            elif name in RECLAIMABLE_DIR_NAMES:
                 yield Path(dirpath) / name
                 # no descender dentro -- evita contar cachés anidadas dos veces
             else:

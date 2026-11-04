@@ -1,3 +1,4 @@
+import pytest
 from conftest import make_dir_with_size, write
 
 from diskwhy.checks.orphaned_envs import OrphanedEnvsCheck
@@ -30,3 +31,11 @@ def test_sin_venvs_no_hay_hallazgos(tree):
     result = OrphanedEnvsCheck().run(tree)
     assert result.findings == []
     assert "0 entorno" in result.summary
+
+
+@pytest.mark.parametrize("marker", ["requirements-dev.txt", "uv.lock", "environment.yml", "script.py",
+                                    "requirements/base.txt"])
+def test_venv_de_proyecto_vivo_no_es_huerfano(tree, marker):
+    make_dir_with_size(tree / "p" / ".venv", 10)
+    write(tree / "p", marker, "x")
+    assert OrphanedEnvsCheck().run(tree).findings == []

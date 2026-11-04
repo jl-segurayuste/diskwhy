@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 
 from diskwhy.fs import dir_size, human_size
-from diskwhy.patterns import PROJECT_MARKER_FILES, VENV_DIR_NAMES
+from diskwhy.patterns import PROJECT_MARKER_FILES, PROJECT_MARKER_GLOBS, VENV_DIR_NAMES
 from diskwhy.plugin import CheckResult, Finding
 
 
@@ -20,7 +20,11 @@ def _find_venv_dirs(root: Path):
 
 
 def _has_project_markers(parent: Path) -> bool:
-    return any((parent / marker).exists() for marker in PROJECT_MARKER_FILES)
+    # Antes solo los nombres fijos: un proyecto con requirements-dev.txt, uv.lock o solo scripts
+    # salía como huérfano con gravedad alta.
+    if any((parent / marker).exists() for marker in PROJECT_MARKER_FILES):
+        return True
+    return any(next(parent.glob(pattern), None) is not None for pattern in PROJECT_MARKER_GLOBS)
 
 
 class OrphanedEnvsCheck:

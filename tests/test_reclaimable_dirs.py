@@ -40,3 +40,20 @@ def test_arbol_limpio_sin_hallazgos(tree):
     write(tree, "src/main.py", "x = 1\n")
     result = ReclaimableDirsCheck().run(tree)
     assert result.findings == []
+
+
+def test_build_con_codigo_versionado_no_es_regenerable(tree):
+    import subprocess
+
+    write(tree / "goapp", "build/package/Dockerfile", "FROM x\n")
+    make_dir_with_size(tree / "goapp" / "build" / "node_modules", 100)
+    subprocess.run(["git", "init", "-q"], cwd=tree / "goapp", check=True)
+    subprocess.run(["git", "add", "build/package/Dockerfile"], cwd=tree / "goapp", check=True)
+    titles = [f.title for f in ReclaimableDirsCheck().run(tree).findings]
+    assert not any(t.startswith("build ") for t in titles)
+    assert any(t.startswith("node_modules") for t in titles)      # se sigue mirando dentro
+
+
+def test_build_sin_versionar_si_es_regenerable(tree):
+    make_dir_with_size(tree / "p" / "build", 100)
+    assert [f.title.split()[0] for f in ReclaimableDirsCheck().run(tree).findings] == ["build"]

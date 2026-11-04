@@ -31,9 +31,24 @@ PROJECT_MARKER_FILES: frozenset[str] = frozenset(
         "setup.py",
         "setup.cfg",
         "Pipfile",
+        "Pipfile.lock",
         "poetry.lock",
+        "uv.lock",
+        "pdm.lock",
+        "pixi.toml",
+        "environment.yml",
+        "environment.yaml",
+        "tox.ini",
+        "hatch.toml",
+        "requirements",   # directorio requirements/base.txt, dev.txt...
     }
 )
+# Además de los anteriores: requirements-dev.txt, código o notebooks sueltos junto al venv.
+PROJECT_MARKER_GLOBS: tuple[str, ...] = ("requirements*.txt", "*.py", "*.ipynb")
+
+# Nombres que también se usan para carpetas de código (el build/ de un proyecto Go, un dist/ que
+# se publica...): solo son regenerables si git no tiene ficheros dentro.
+AMBIGUOUS_DIR_NAMES: frozenset[str] = frozenset({"build", "dist", "target", "coverage", ".cache"})
 
 VENV_DIR_NAMES: frozenset[str] = frozenset({".venv", "venv"})
 
