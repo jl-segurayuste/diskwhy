@@ -35,3 +35,14 @@ def test_list_checks_incluye_los_cuatro(capsys):
     assert "orphaned_envs" in out
     assert "duplicate_lockfiles" in out
     assert "docker_reclaimable" in out
+
+
+def test_check_que_revienta_sale_2(tmp_path, monkeypatch, capsys):
+    from diskwhy import cli
+    from diskwhy.plugin import CheckResult
+
+    monkeypatch.setattr(cli, "run_checks", lambda *a, **k: [
+        CheckResult(check_name="roto", summary="El check falló", error="Traceback..."),
+    ])
+    assert cli.main(["scan", str(tmp_path)]) == 2
+    assert "roto" in capsys.readouterr().err

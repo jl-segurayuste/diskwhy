@@ -47,6 +47,7 @@ diskwhy scan .                          # informe en consola
 diskwhy scan . --only reclaimable_dirs  # solo un check
 diskwhy scan . --json
 diskwhy scan . --fail-on high           # código de salida 1 si hay algo "high"
+                                        # código 2 si algún check no se pudo ejecutar (análisis incompleto)
 diskwhy list-checks
 ```
 
