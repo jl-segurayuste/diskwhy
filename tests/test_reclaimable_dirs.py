@@ -12,12 +12,12 @@ def test_detecta_node_modules(tree):
 
 
 def test_detecta_varios_tipos(tree):
-    make_dir_with_size(tree / "a" / "node_modules", 100)
-    make_dir_with_size(tree / "b" / ".venv", 200)
-    make_dir_with_size(tree / "c" / "__pycache__", 50)
+    make_dir_with_size(tree / "a" / "node_modules", 40960)
+    make_dir_with_size(tree / "b" / ".venv", 81920)
+    make_dir_with_size(tree / "c" / "__pycache__", 20480)
     result = ReclaimableDirsCheck().run(tree)
     assert len(result.findings) == 3
-    assert "350 B" in result.summary
+    assert "140.0 KB" in result.summary
 
 
 def test_no_desciende_dentro_de_una_carpeta_regenerable(tree):
@@ -29,11 +29,11 @@ def test_no_desciende_dentro_de_una_carpeta_regenerable(tree):
 
 
 def test_ordena_por_tamano_descendente(tree):
-    make_dir_with_size(tree / "small" / ".venv", 10)
-    make_dir_with_size(tree / "big" / "node_modules", 1000)
+    make_dir_with_size(tree / "small" / ".venv", 4096)
+    make_dir_with_size(tree / "big" / "node_modules", 409600)
     result = ReclaimableDirsCheck().run(tree)
-    assert result.findings[0].size_bytes == 1000
-    assert result.findings[1].size_bytes == 10
+    assert result.findings[0].size_bytes == 409600
+    assert result.findings[1].size_bytes == 4096
 
 
 def test_arbol_limpio_sin_hallazgos(tree):

@@ -12,7 +12,7 @@ def tree(tmp_path: Path) -> Path:
 
 def make_dir_with_size(path: Path, size_bytes: int) -> Path:
     path.mkdir(parents=True, exist_ok=True)
-    (path / "data.bin").write_bytes(b"\0" * size_bytes)
+    (path / "data.bin").write_bytes(b"\1" * size_bytes)
     return path
 
 
